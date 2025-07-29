@@ -360,7 +360,7 @@ function MidiFileUploader() {
         fontFamily: "sans-serif",
       }}
     >
-      <h2>MIDI File Uploader</h2>
+      <h2>MIDI Combiner</h2>
       {error && (
         <div
           style={{
