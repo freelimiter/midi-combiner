@@ -57,17 +57,23 @@ function SortableItem({ id, file, index, onRemove, onRepeatChange }) {
       >
         ☰
       </span>
-      <span
-        style={{
-          flex: 1,
-          overflow: "hidden",
-          textOverflow: "ellipsis",
-          whiteSpace: "nowrap",
-        }}
-        title={file.name}
-      >
-        {index + 1}. {file.name}
-      </span>
+		<span
+		  className="filename"
+		  title={file.name}
+		  style={{
+			flex: 1,
+			maxWidth: "1000px",       // or adjust to your UI needs
+			overflow: "hidden",
+			textOverflow: "ellipsis",
+			whiteSpace: "nowrap",
+			display: "inline-block",
+			verticalAlign: "middle",
+			cursor: "pointer",
+		  }}
+		>
+		  {index + 1}. {file.name}
+		</span>	
+
       <label style={{ marginRight: 8 }}>
         Repeat:
         <input
@@ -348,7 +354,7 @@ function MidiFileUploader() {
   return (
     <div
       style={{
-        maxWidth: 420,
+        maxWidth: 820,
         margin: "auto",
         padding: 24,
         fontFamily: "sans-serif",
