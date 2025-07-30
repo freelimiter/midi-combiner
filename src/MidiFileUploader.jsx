@@ -1,3 +1,4 @@
+import BeatBuddyDescription from "./BeatBuddyDescription";
 import React, { useRef, useState } from "react";
 import { Midi } from "@tonejs/midi";
 import { saveAs } from "file-saver";
@@ -467,6 +468,7 @@ function MidiFileUploader() {
         </div>
       )}
     </div>
+    
   );
 }
 
